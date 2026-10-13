@@ -9,3 +9,4 @@
 |------|------|------|
 | [exp001](exp001-format-boundaries/readme.md) | 后缀、解析与事实需分别检查 | 三项合成反例通过；不代表教学效果 |
 | [exp002](exp002-outline-task/readme.md) | 短文本任务能展开为机制、动作与证据 | 两份虚构材料、四题离线走查成立；不验证真实入口或学习效果 |
+| [exp003](exp003-prerequisite-coverage/readme.md) | 上下文、核验与执行应分别定位偏差 | 三类合成反例成立；只查知识覆盖逻辑，不验证教学效果 |

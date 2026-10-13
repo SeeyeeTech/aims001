@@ -1,0 +1,32 @@
+{
+  "case_material": "全部为合成材料，不含真实参与者或模型实测回复。",
+  "cases": [
+    {
+      "id": "missing-context",
+      "basis": "A：上下文窗口与知识限制；M：当前提示与对话历史",
+      "available_material": {},
+      "draft": {"event_date": "2026-11-06"},
+      "repaired": {},
+      "diagnostic_question": "新对话没有通知原文，这个日期有没有当前可用依据？"
+    },
+    {
+      "id": "unsupported-source",
+      "basis": "N：搜索来源与批评；A：结果和过程判断；访谈：外部核验",
+      "documents": [
+        {"id": "notice", "facts": {"event_date": "2026-11-06"}},
+        {"id": "update", "replaces": ["event_date"], "facts": {"event_date": "2026-11-08"}}
+      ],
+      "draft": {"event_date": "2026-11-06", "fee": 50},
+      "repaired": {"event_date": "2026-11-08"},
+      "diagnostic_question": "有链接或出处，是否就能支持旧日期与收费数字？"
+    },
+    {
+      "id": "unexecuted-action",
+      "basis": "M：工具请求、返回与反馈循环",
+      "tool_events": [{"tool": "write_file", "status": "success", "path": "notice.md"}],
+      "draft": {"file_written": true, "notification_sent": true},
+      "repaired": {"file_written": true},
+      "diagnostic_question": "文件写成了，能否据此声称通知已经发出？"
+    }
+  ]
+}

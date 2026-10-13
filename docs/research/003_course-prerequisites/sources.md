@@ -28,3 +28,4 @@
 - [Grant Sanderson／3Blue1Brown](https://www.3blue1brown.com/lessons/gpt/)，What is a GPT model?、Tokens：生成、预训练、采样、token。只取概念，不搬矩阵推导。
 - [Anthropic 上下文讲解](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)，Context retrieval、Compaction、Structured note-taking：取材、压缩和外部记忆；属于工程说明，不计作独立课程。
 - [Anthropic 学员访谈](https://academy.claude.com/tutorials/discernment-toolkit)，Expertise was the biggest barrier、Limitations：有经验用户仍遇到领域知识、上下文和验证障碍；自选、自报样本，不可据此推算本课学员缺项或验证教学效果。
+- [VS Code：Timeline 与本地历史](https://code.visualstudio.com/docs/editing/getting-started/userinterface#_timeline-view)，Timeline view / Local file history；[1.66 的明确功能说明](https://code.visualstudio.com/updates/v1_66#_local-history)：可比较、恢复文件记录，受设置、大小和保存条件影响。只补第 5 讲已定恢复练习的可行性依据，不计为 AI 课程共识；课堂版本仍须实际冒烟。
