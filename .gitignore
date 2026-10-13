@@ -12,6 +12,9 @@ _archive/*
 resources/**
 !resources/README.md
 
+# 本地自有课程原件入口（软链接），来源登记入库
+vault/raw/AICourse
+
 # 注：notes/ 装同事写的、要读的东西，**入库**。只有你自己看的速记不放这里，放 _tmp/
 
 # 大件（本地 + 云盘，绝不入库；按需加例外）

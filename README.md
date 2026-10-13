@@ -36,6 +36,8 @@
 
 ## 外部参考
 
+本地课程原件索引见 [vault/raw/README.md](vault/raw/README.md)，AICourse 的来源与阅读入口见 [登记](vault/truth/aicourse-reference.md)。课程关系维护在 [现实约束](.42cog/real.md)。
+
 Missing Semester 中文版参考仓库在本地位于 `resources/missing-semester-cn.github.io/`，用于参考课程组织、讲义、练习和网站结构。仓库保留上游 Git 历史，按只读参考使用。
 
 参考源索引见 [resources/README.md](resources/README.md)，获取提交、许可说明与阅读入口见 [来源登记](vault/truth/missing-semester-cn-reference.md)。第三方参考仓库本地留存，由主项目 Git 忽略。

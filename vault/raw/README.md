@@ -5,7 +5,9 @@
 
 ## 已收录原件
 
-当前尚未收录原件。第三方参考仓库归入 [resources/](../../resources/README.md)，Missing Semester 中文版已移至该目录。
+- AICourse：本地软链接原件，位置与课程关系见 [来源登记](../truth/aicourse-reference.md)，AI101 各模块、讲义和配套材料见 [模块索引](../truth/aicourse-reference.md#ai101-模块索引)。
+
+第三方参考仓库归入 [resources/](../../resources/README.md)，Missing Semester 中文版已移至该目录。
 
 ## 使用边界
 
