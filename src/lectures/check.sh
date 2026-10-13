@@ -28,10 +28,15 @@ try:
     if not isinstance(required, dict) or not required:
         raise ValueError("已确认知识词组为空")
     knowledge = []
-    for label, expressions in required.items():
+    for label, spec in required.items():
+        if not isinstance(spec, dict) or set(spec) != {"lecture", "patterns"}:
+            raise ValueError("知识词组须包含 lecture 与 patterns：" + label)
+        lecture, expressions = spec["lecture"], spec["patterns"]
+        if type(lecture) is not int or not 1 <= lecture <= 6:
+            raise ValueError("知识词组的讲次须为 1—6：" + label)
         if not isinstance(expressions, list) or not expressions:
             raise ValueError("知识词组必须为非空列表：" + label)
-        knowledge.append((label, [re.compile(p, re.I) for p in expressions]))
+        knowledge.append((label, lecture, [re.compile(p, re.I) for p in expressions]))
     patterns = []
     for line in fence(negatives, "PATTERNS").splitlines():
         if not line.strip() or line.lstrip().startswith("#"):
@@ -72,10 +77,11 @@ for title, number, body in actual:
         if pattern.search(title + "\n" + body):
             errors.append(f"N6：第 {number} 讲命中「{note}」")
 
-core = "\n".join(body for _, _, body in actual)
-for label, expressions in knowledge:
-    if any(pattern.search(core) is None for pattern in expressions):
-        errors.append("N3：缺少已确认知识词组「" + label + "」")
+lecture_bodies = {int(number): body for _, number, body in actual}
+for label, lecture, expressions in knowledge:
+    body = lecture_bodies.get(lecture, "")
+    if any(pattern.search(body) is None for pattern in expressions):
+        errors.append(f"N3：第 {lecture} 讲缺少已确认知识词组「{label}」")
 
 print(f"共 {total} 个小节；各讲字符数（含讲题、编号与标点，去除排版符号和空白）：" + "／".join(counts))
 print("人工核对清单（脚本不判）：")
@@ -84,5 +90,5 @@ for item in checklist:
 if errors:
     print("\n".join(errors), file=sys.stderr)
     sys.exit(1)
-print(f"结构与 {len(knowledge)} 组知识词组检查通过；知识关系、深度与教学实效仍需人判断。")
+print(f"结构与 {len(knowledge)} 组知识词组及讲次归属检查通过；知识关系、深度与教学实效仍需人判断。")
 PY
