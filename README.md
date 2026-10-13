@@ -1,6 +1,6 @@
 # AI Missing Semester
 
-面向零基础、想使用 AI 干活的普通大众的课程项目，以工作坊形式组织学习，不要求编程或机器学习先修知识。
+课程受众与学习目标见下方意向书；以工作坊形式补齐必要前置知识，通过失败诊断、对照实验与修复练习提升实际使用能力。
 
 课程方向与验收标准的唯一正本是 [意向书](.42cog/intent.md)，具体教学安排见 [课程大纲](src/lectures/outline.md)。
 
@@ -25,7 +25,7 @@
 
 ## 当前进度与入口
 
-六讲逐节目录与材料串联策略已确认，完整讲义、PPTX 和网站尚未制作。下一步通过第 3、5 讲的小样测试操作负荷，再确定课时与内容深度；详细进度以 [状态板](state/board.md) 为准。
+已按受众定位重新核查课程知识，当前请看 [六讲简短知识清单](docs/research/003_course-prerequisites/knowledge-list.md)；知识组合待确定，完整讲义、PPTX 和网站尚未制作。详细进度以 [状态板](state/board.md) 为准。
 
 | 入口 | 内容 |
 |---|---|
@@ -62,4 +62,4 @@ python3 scripts/check-manifests.py
 python3 scripts/check-course.py
 ```
 
-这些检查验证工具、插件清单与课程文件结构；教学效果通过教师评审和零基础试教验证。AI 开工与协作规则见 [AGENTS.md](AGENTS.md)。
+这些检查验证工具、插件清单与课程文件结构；教学效果通过教师评审和目标学员试教验证。AI 开工与协作规则见 [AGENTS.md](AGENTS.md)。
