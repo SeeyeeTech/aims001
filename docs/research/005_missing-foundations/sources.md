@@ -2,6 +2,8 @@
 
 核验：2026-10-13。A＝可见课程或教程明确讲授；B＝规范或实际文件要求；C＝本课据依赖关系作出的教学取舍。A/B 不等于本课学员缺项或教学有效。
 
+后续采用：用户明确原知识全部涵盖，并至少补 Git、浏览器；新增 S11–S14，内容已进入大纲。基础辨读与完整开发分开，不把每讲字数当操作负荷证明。
+
 ## 自有积累
 
 | ID | 材料 | 本轮用途 |
@@ -25,6 +27,10 @@
 | S8 | [MCP 工具规范固定版](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)，Tool definition / Calling tools / Error handling | B：工具名字、参数结构、返回及错误；借机制辨识，不讲连接协议实现。固定版本并非声称最新版本 |
 | S9 | [AICourse 阅读入口](../../../vault/truth/aicourse-reference.md)；原件 lesson02/lecture.md L23–31、L48–70、L302–311；lesson01 L7–15 | 用户提供的参照按只读借鉴：明确用到 Markdown、目录、元数据、上下文与工具。产品数字、推荐和历史日期不作依据；例子有大小写混用等风险，以 S4 为规范依据 |
 | S10 | [skills-ref 代码固定提交](https://github.com/agentskills/agentskills/tree/69ef37e9424c0a7ea9dd2293b559e43ec8176379/skills-ref)，parser.py / validator.py / README | 本轮实际运行的参考校验器；仅供演示，检验格式不检验正文方法质量 |
+| S11 | [MIT Git](https://missing.csail.mit.edu/2026/version-control/)，Snapshots / Staging area / Branching and merging / Remotes / GitHub；[Pro Git 记录修改](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) | A：版本快照、工作区／暂存／提交、差异、分支合并与远端；Git 与 GitHub 区分明确。C：用于理解 AI 改动和恢复，不搬完整命令或多人开发流程 |
+| S12 | MDN [Web 如何工作](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works)，Clients and servers / HTTP basics；[URL](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL)；[开发者工具](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools)；Chrome [Network 教程](https://developer.chrome.com/docs/devtools/network/) | A/B：浏览器／服务器、网页资源、HTML/CSS/JS、网址组成、请求返回、状态码、Console 与 Network。C：理解 AI 产出的网页和网络故障，基础辨识不等于前端开发 |
+| S13 | MDN [Code editors](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Code_editors)、[Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies)、[HTTP 缓存](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching)；Chrome [扩展权限](https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions) | A/B：源文编辑、会话状态、缓存与扩展访问权限。C：用来读改 AI 文件、理解网页登录和旧资源，不要求编写扩展或部署认证系统 |
+| S14 | [MIT Backups](https://missing.csail.mit.edu/2020/potpourri/#backups) | A：同步可能传播删除与错误，备份需可恢复与独立副本。C：区分 Git 历史、远端同步与完整备份；不能保证未纳入记录的文件可恢复 |
 
 S2 来源链：[仓 README](https://github.com/https-deeplearning-ai/sc-agent-skills-files#about-this-repository)说明对应课程，并链接正式页面；[官方课程总目录](https://github.com/https-deeplearning-ai/deeplearning-ai)同时登记课程及材料仓。只核对公开笔记与目录，没有冒称看完视频。
 
