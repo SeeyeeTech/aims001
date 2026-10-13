@@ -8,7 +8,7 @@
 |---|---|---|
 | O1 | `.42cog/intent.md:9`、`:19`、`:20`、`:35`、`:36` | 零先修、任务验收、先定大纲和三载体关系；直接遵守，不复制方向句 |
 | O2 | `.42cog/real.md:5`、`:7`、`:8`；`docs/research/001_lecture-knowledge/decision.md:31` | 已确认课数与深度；课时、设备未知，不能替用户认定 |
-| O3 | `src/lectures/outline.md` 的“核心课：6 讲”和“工作坊节奏”；Git `be38241:lectures/outline.md` | 现有主任务和判据可复用；旧稿是比较对象，不能把其粒度当标准。行号随本轮新增入口改变，以节名或提交定位 |
+| O3 | Git `be38241:lectures/outline.md:31`；本轮迁入前的工作区旧稿（改动前差异已保留） | 旧稿主任务和判据可复用；旧稿用于比较，不能把其粒度当标准。新逐节正文以 `src/lectures/outline.md` 为准 |
 | O4 | `docs/research/001_lecture-knowledge/knowledge-map.md:43`、`:78`、`:83`、`:135`；`specs/course.md:5`、`:7` | 文件、Markdown、恢复已有库存，教学先后已有线索；改编为节次，不照原表逐行加课 |
 
 只查本项目及两次本地提交；没有已有的零基础试教数据。自有方案可改编，不自动当已证明有效的方案。
