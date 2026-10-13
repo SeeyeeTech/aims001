@@ -9,3 +9,4 @@
 | [002](002_outline-design/) | 2026-10-13 | 重新设计符合 Missing Semester 风格的零基础 AI 课程大纲 |
 | [003](003_course-prerequisites/) | 2026-10-13 | 依据当前意向重选六讲 AI 前置知识 |
 | [004](004_aicourse-alignment/) | 2026-10-13 | 当前大纲与 AICourse 基本思想的符合性分析 |
+| [005](005_missing-foundations/) | 2026-10-13 | 普通 AI 用户缺失的技术基础及课程取舍 |

@@ -10,6 +10,7 @@
 | 编号 | 日期 | 标题 |
 |------|------|------|
 | [004](research/004_aicourse-alignment/README.md) | 2026-10-13 | 当前大纲与 AICourse 基本思想的符合性分析 |
+| [005](research/005_missing-foundations/README.md) | 2026-10-13 | 普通 AI 用户缺失的技术基础及课程取舍 |
 
 ## 实施计划
 

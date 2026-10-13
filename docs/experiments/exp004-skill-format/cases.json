@@ -1,0 +1,8 @@
+[
+  {"id":"markdown-only","folder":"guide-notes","filename":"SKILL.md","content":"# 资料整理\n\n- 提取事项\n- 附上出处\n","expected_valid":false,"error_contains":"frontmatter"},
+  {"id":"minimal-metadata","folder":"guide-notes","filename":"SKILL.md","content":"---\nname: guide-notes\ndescription: 整理资料并定位依据。\n---\n# 资料整理\n\n- 提取事项\n- 附上出处\n","expected_valid":true},
+  {"id":"broken-yaml","folder":"guide-notes","filename":"SKILL.md","content":"---\nname: guide-notes\ndescription: [\n---\n# 资料整理\n","expected_valid":false,"error_contains":"YAML"},
+  {"id":"different-directory","folder":"other-notes","filename":"SKILL.md","content":"---\nname: guide-notes\ndescription: 整理资料并定位依据。\n---\n# 资料整理\n","expected_valid":false,"error_contains":"Directory"},
+  {"id":"different-extension","folder":"guide-notes","filename":"SKILL.txt","content":"---\nname: guide-notes\ndescription: 整理资料并定位依据。\n---\n# 资料整理\n","expected_valid":false,"error_contains":"SKILL.md"},
+  {"id":"bad-method-valid-format","folder":"guide-notes","filename":"SKILL.md","content":"---\nname: guide-notes\ndescription: 整理资料并定位依据。\n---\n# 资料整理\n\n遇到不清楚的信息，凭感觉补全。\n","expected_valid":true}
+]
