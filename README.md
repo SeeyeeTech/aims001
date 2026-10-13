@@ -1,63 +1,65 @@
 # AI Missing Semester
 
-当前进入：[课程大纲草案](lectures/outline.md) · [意向书](.42cog/intent.md)。先共同确定大纲，再制作 lecture 讲义、教学 PPTX 和交互自学网站。
+面向零基础、想使用 AI 干活的普通大众的课程项目，以工作坊形式组织学习，不要求编程或机器学习先修知识。
 
-> 这是一个 **AI 自主系统**：你定方向与标准，它把活干完。
-> 作品在 `lectures/`，开仓于 2026-10-13。
->
-> **这个系统朝哪儿使劲** —— 见 `.42cog/intent.md` 最上面那一句。
-> 那句话只有一份，改它不必回来改这里。
+课程方向与验收标准的唯一正本是 [意向书](.42cog/intent.md)，具体教学安排见 [课程大纲](src/lectures/outline.md)。
 
-## 从这里开始
+## 课程结构
 
-**第一件事，也是唯一要你亲自过目的一件事**：
+- 核心课 **6 讲**：第一讲建立最小全局认识，最后一讲综合实践。
+- 主题选修 **不超过 4 讲**，按学习者需要选择。
+- 每讲包含演示、实操、反馈与修改，学生带走可检查的成果。
+- 每讲时长先通过操作负荷测试确定；大纲中的 90 分钟为测试建议。
 
-打开 `.42cog/intent.md`，看最上面那一句「收敛方向」。**觉得不对就改。** 其余都是草稿，看不顺眼再动。
+逐讲主题、必要概念与实操任务维护在 [大纲](src/lectures/outline.md) 中。
 
-写错没关系，空着才有关系——空着的方向会被平均值填满。第一版粗是常态，跑完一轮系统分析再回来改，改上三五次才定得住。
+## 最终交付
 
-然后跑一次工具检查（只看不装）：
+| 交付物 | 使用方式 |
+|---|---|
+| Lecture 讲义 | 独立阅读，包含案例、操作说明、练习与答案说明 |
+| 教学 PPTX | 教师带工作坊，包含演示、活动指令与讲者备注 |
+| 交互自学网站 | 学习者在线完成任务，获得提示、检查反馈并重试 |
+
+三种载体共享学习目标、案例与验收标准，具体要求见 [课程交付标准](specs/course.md)。
+
+## 当前进度与入口
+
+当前处于大纲设计与知识点研究阶段，完整讲义、PPTX 和网站尚未制作。下一步通过第 3、5 讲的小样测试操作负荷，再确定课时与内容深度；详细进度以 [状态板](state/board.md) 为准。
+
+| 入口 | 内容 |
+|---|---|
+| [课程大纲](src/lectures/outline.md) | 核心课、选修、工作坊任务与交付安排 |
+| [研究索引](docs/research/README.md) | 知识点分层、大纲设计研究与取舍 |
+| [实验索引](docs/experiments/README.md) | 已执行的小实验及证据边界 |
+| [演化记录](state/changelog.md) | 重要调整及其原因 |
+
+## 外部参考
+
+Missing Semester 中文版参考仓库位于 [resources/missing-semester-cn.github.io/](resources/missing-semester-cn.github.io/)，用于参考课程组织、讲义、练习和网站结构。仓库保留上游 Git 历史，按只读参考使用。
+
+参考源索引见 [resources/README.md](resources/README.md)，获取提交、许可说明与阅读入口见 [来源登记](vault/truth/missing-semester-cn-reference.md)。第三方参考仓库本地留存，由主项目 Git 忽略。
+
+## 项目目录
+
+| 位置 | 用途 |
+|---|---|
+| [AGENTS.md](AGENTS.md)、[.42cog/](.42cog/)、[specs/](specs/) | 开工协议、项目元数据与产出标准 |
+| [src/lectures/](src/lectures/) | 课程作品，当前为大纲；未来按一讲组织内容 |
+| [resources/](resources/README.md) | 第三方参考仓库与材料 |
+| [vault/](vault/)、[notes/](notes/README.md) | 原始依据、来源核验与人类笔记 |
+| [skills/](skills/README.md)、[scripts/](scripts/README.md) | 工作方法与确定性检查 |
+| [docs/](docs/)、[state/](state/board.md) | 研究、计划、实验与当前状态 |
+| `_build/`、`_tmp/`、`_archive/` | 构建和过程材料，不入库 |
+
+## 本地检查
+
+检查运行时版本见 [.python-version](.python-version)。在项目根目录执行：
 
 ```bash
-bash scripts/check-tools.sh            # 缺什么、怎么装
-bash scripts/check-tools.sh --mirrors  # 装不上时的国内镜像
+bash scripts/check-tools.sh
+python3 scripts/check-manifests.py
+python3 scripts/check-course.py
 ```
 
-**它只报告，不会自己装任何东西。** 输出里的安装命令看不懂就先跳过——
-缺的工具多半这会儿还用不上，等真用到了再回来装。**别卡在这一步。**
-
-## 目录：六组
-
-**一、三、四、五是我的，第二组是别人的，第六组是垃圾。**
-
-| 组 | 位置 | 装什么 |
-|---|---|---|
-| 1　开工手册与规约 | `AGENTS.md` · `.42cog/` · `specs/` | 我立的规矩 |
-| 2　真相源与参考 | `vault/` · `notes/` · `resources/` | 别人的材料 |
-| 3　脚本与扩展 | `skills/` · `scripts/` · `plugin.json` | 我的手段 |
-| 4　作品 | `lectures/` | 我产的东西 |
-| 5　状态与文档 | `state/` · `docs/` | 我的账 |
-| 6　过程材料 | `_build/` `_tmp/` `_archive/` | 扔的，不入库 |
-
-第二组只有一条线要记：**能引用到什么程度**——`vault/` 可引用，`notes/` 与 `resources/` 只读。动了前者是冒犯，抄了后者是侵权。
-
-## 这四份说明这个系统是什么
-
-| 文件 | 装什么 |
-|---|---|
-| `.42cog/intent.md` | **意向书**：朝哪儿使劲 · 真难题 · 不做什么 |
-| `.42cog/real.md` | **现实约束**：日程 · 底线红线 · 手上有多少资源 · 给谁用 |
-| `.42cog/cog.md` | **认知模型**：有哪些东西，谁产生、谁是谁的输入 |
-| `.42cog/meta.md` | **项目身份**：系统名 · 作品区 · 上下游 · 依赖 |
-
-## 干到哪了
-
-看 `state/board.md`——每一轮干完什么、下一步是什么，都记在那里。
-换一台机器、换一个新会话，从那份文件接着往下走。
-
----
-
-**给 AI 的开工协议在 `AGENTS.md`**，它每次开工先读那一份。
-这份 README 是给人看的门面：README 说这是什么，`AGENTS.md` 说该怎么干。
-
-*由 `aias-meta-init` 生成于 2026-10-13。*
+这些检查验证工具、插件清单与课程文件结构；教学效果通过教师评审和零基础试教验证。AI 开工与协作规则见 [AGENTS.md](AGENTS.md)。

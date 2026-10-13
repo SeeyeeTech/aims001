@@ -3,8 +3,8 @@
 - 系统名：AI Missing Semester；系统码：`aims`。
 - 开仓：2026-10-13；状态：大纲共创。
 - 负责人：当前用户。
-- 作品区：`lectures/`；作品单位与关系见 `cog.md`。
-- 远程仓库：待用户提供地址，目前仅本地 Git。
+- 作品区：`src/lectures/`；作品单位与关系见 `cog.md`。
+- 远程仓库：CNB https://cnb.cool/seeyeetech/zhanshui/aims001（`origin`）；GitHub https://github.com/SeeyeeTech/aims001（`github`，公开）。当前开发分支为 `dev`。
 - 六组目录与技能默认骨架一致。
 - 上游：用户意图、公开参考课、未来试教反馈。
 - 下游：教师与自学学习者，接收讲义、PPTX 与网站。

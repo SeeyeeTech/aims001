@@ -15,7 +15,11 @@ for name in ("intent", "real", "cog", "meta"):
     if not content.strip() or "待 AI 起草" in content or "{{" in content:
         errors.append(f"未填写 {path.relative_to(root)}")
 
-for path in [root / "README.md", *sorted((root / "lectures").rglob("*.md"))]:
+course = root / "src" / "lectures"
+if not (course / "outline.md").is_file():
+    errors.append("缺少 src/lectures/outline.md")
+
+for path in [root / "README.md", *sorted((root / "src" / "lectures").rglob("*.md"))]:
     for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", path.read_text()):
         if target.startswith(("https://", "http://", "#")):
             continue
