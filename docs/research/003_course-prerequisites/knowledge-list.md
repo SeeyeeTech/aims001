@@ -1,10 +1,10 @@
 # 六讲知识点清单
 
-依据当前意向重新取证；以下编排为建议，每讲不超过 200 字。[来源定位与证据边界](sources.md)另列。
+依据当前意向重新取证；首讲最小全局认识已由用户明确，其余知识组合仍为建议，每讲不超过 200 字。[来源定位与证据边界](sources.md)另列。
 
-## 1 · 大语言模型与能力边界
+## 1 · AI 使用的最小全局认识
 
-概率生成；预训练知识与当前输入的区别；模型、应用与工具；知识时效、幻觉与能力边界；任务是否适合 AI、何时需要自己的领域知识。依据：[Mollick](https://gail.wharton.upenn.edu/practical-ai/)、[MIT 讲义](https://missing.csail.mit.edu/2026/agentic-coding/)。
+模型、应用、工具与 Agent 的关系；完整任务链：目标→材料与上下文→生成或工具执行→核验→交付；AI 的能力与局限、人机分工；常见偏差在任务链上的位置。先建立整体地图，后续逐讲展开知识与方法。依据：[Mollick](https://gail.wharton.upenn.edu/practical-ai/)、[MIT 讲义](https://missing.csail.mit.edu/2026/agentic-coding/)。
 
 ## 2 · 任务说明与提示迭代
 
