@@ -8,3 +8,9 @@
 | — | 2026-10-13 | 确定六讲核心课与四个选修的知识点及教学深度 → 取舍卡见 `docs/research/001_lecture-knowledge/decision.md` |
 | — | 2026-10-13 | 课程大纲设计重审 → [取舍卡](../research/002_outline-design/decision.md)，组织与案例串联均选 A（2026-10-13，AA），已落实正本 |
 | — | 2026-10-13 | 依据当前意向重选六讲 AI 前置知识 → 取舍卡见 `docs/research/003_course-prerequisites/decision.md` |
+
+## 实施计划
+
+| 编号 | 日期 | 标题 | 状态 |
+|------|------|------|------|
+| [001](001_lecture-three-sample.md) | 2026-10-13 | 第三讲教学小样入手卡 | draft |
