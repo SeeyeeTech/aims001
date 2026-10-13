@@ -36,7 +36,7 @@
 
 ## 外部参考
 
-Missing Semester 中文版参考仓库位于 [resources/missing-semester-cn.github.io/](resources/missing-semester-cn.github.io/)，用于参考课程组织、讲义、练习和网站结构。仓库保留上游 Git 历史，按只读参考使用。
+Missing Semester 中文版参考仓库在本地位于 `resources/missing-semester-cn.github.io/`，用于参考课程组织、讲义、练习和网站结构。仓库保留上游 Git 历史，按只读参考使用。
 
 参考源索引见 [resources/README.md](resources/README.md)，获取提交、许可说明与阅读入口见 [来源登记](vault/truth/missing-semester-cn-reference.md)。第三方参考仓库本地留存，由主项目 Git 忽略。
 
@@ -47,7 +47,7 @@ Missing Semester 中文版参考仓库位于 [resources/missing-semester-cn.gith
 | [AGENTS.md](AGENTS.md)、[.42cog/](.42cog/)、[specs/](specs/) | 开工协议、项目元数据与产出标准 |
 | [src/lectures/](src/lectures/) | 课程作品，当前为大纲；未来按一讲组织内容 |
 | [resources/](resources/README.md) | 第三方参考仓库与材料 |
-| [vault/](vault/)、[notes/](notes/README.md) | 原始依据、来源核验与人类笔记 |
+| [vault/](vault/)、`notes/` | 原始依据、来源核验与人类笔记 |
 | [skills/](skills/README.md)、[scripts/](scripts/README.md) | 工作方法与确定性检查 |
 | [docs/](docs/)、[state/](state/board.md) | 研究、计划、实验与当前状态 |
 | `_build/`、`_tmp/`、`_archive/` | 构建和过程材料，不入库 |
