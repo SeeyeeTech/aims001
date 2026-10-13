@@ -1,7 +1,7 @@
 # AI Missing Semester · 项目身份
 
 - 系统名：AI Missing Semester；系统码：`aims`。
-- 开仓：2026-10-13；状态：课程知识重新取证，简短清单待确定。
+- 开仓：2026-10-13；状态：简版课程大纲已更新，调研验证收尾。
 - 负责人：当前用户。
 - 作品区：`src/lectures/`；作品单位与关系见 `cog.md`。
 - 远程仓库：CNB https://cnb.cool/seeyeetech/zhanshui/aims001（`origin`）；GitHub https://github.com/SeeyeeTech/aims001（`github`，公开）。当前开发分支为 `dev`。

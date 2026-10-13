@@ -9,9 +9,9 @@
 - 核心课 **6 讲**：第一讲建立最小全局认识，最后一讲综合实践。
 - 主题选修 **不超过 4 讲**，按学习者需要选择。
 - 每讲包含演示、实操、反馈与修改，学生带走可检查的成果。
-- 每讲时长先通过操作负荷测试确定；大纲中的 90 分钟为测试建议。
+- 每讲时长通过操作负荷测试确定。
 
-逐讲主题、必要概念与实操任务维护在 [大纲](src/lectures/outline.md) 中。
+逐讲主题与知识点维护在 [大纲](src/lectures/outline.md) 中，实操细节在样章阶段展开。
 
 ## 最终交付
 
@@ -25,11 +25,11 @@
 
 ## 当前进度与入口
 
-已按受众定位重新核查课程知识，当前请看 [六讲简短知识清单](docs/research/003_course-prerequisites/knowledge-list.md)；知识组合待确定，完整讲义、PPTX 和网站尚未制作。详细进度以 [状态板](state/board.md) 为准。
+已按重新取证的六讲知识清单更新 [课程大纲](src/lectures/outline.md)，首讲建立最小全局认识。完整讲义、PPTX 和网站尚未制作。详细进度以 [状态板](state/board.md) 为准。
 
 | 入口 | 内容 |
 |---|---|
-| [课程大纲](src/lectures/outline.md) | 核心课、选修、工作坊任务与交付安排 |
+| [课程大纲](src/lectures/outline.md) | 六讲知识点、选修主题与交付边界 |
 | [研究索引](docs/research/README.md) | 知识点分层、大纲设计研究与取舍 |
 | [实验索引](docs/experiments/README.md) | 已执行的小实验及证据边界 |
 | [演化记录](state/changelog.md) | 重要调整及其原因 |
